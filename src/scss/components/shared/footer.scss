@@ -1,0 +1,9 @@
+@use '/src/scss/variables/colors.scss';
+@use '/src/scss/variables/shadows.scss';
+
+#footer {
+    width: 100%;
+    height: 3%;
+    background-color: colors.$dark-grey;
+    box-shadow: shadows.$up-right;
+}

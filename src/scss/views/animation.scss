@@ -1,0 +1,8 @@
+@use '/src/scss/variables/shadows.scss';
+
+.animation-object {
+  width: 8%;
+  aspect-ratio: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: shadows.$down-right;
+}

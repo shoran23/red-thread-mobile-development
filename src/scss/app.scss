@@ -1,0 +1,18 @@
+@use '/src/scss/variables/colors.scss';
+@use '/src/scss/variables/fonts.scss';
+
+* {
+    font-family: fonts.$main-font-stack;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#app {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    background-color: colors.$background-white;
+}
+

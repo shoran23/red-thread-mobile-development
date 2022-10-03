@@ -1,0 +1,32 @@
+@use '/src/scss/variables/fonts.scss';
+
+#welcome-message {
+    padding-left: 2%;
+}
+#welcome-list {
+    padding-left: 5%;
+}
+#welcome {
+    font-family: fonts.$main-font-stack
+}
+#welcome-description {
+    width: 86%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#welcome-start {
+    width: 20%;
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+#welcome-start-text {
+    font-size: 42px;
+}

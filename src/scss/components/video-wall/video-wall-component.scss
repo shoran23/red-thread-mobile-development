@@ -1,0 +1,8 @@
+@use '/src/scss/variables/shadows.scss';
+
+#video-wall-component {
+    width: 70%;
+    aspect-ratio: 2.2;
+    box-shadow: shadows.$down-right;
+    border-radius: 10px;
+}

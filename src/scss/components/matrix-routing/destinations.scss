@@ -1,0 +1,159 @@
+@use '/src/scss/variables/shadows.scss';
+@use '/src/scss/variables/colors.scss';
+
+/* DESTINATIONS **************************************************************************************/
+#destinations {
+  width: 88%;
+  aspect-ratio: 3.2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.destination-container {
+  height: 76%;
+  aspect-ratio: 1.5;
+  margin-right: 2%;
+}
+.destination {
+  width: 100%;
+  height: 100%;
+  background-color: colors.$light-grey;
+  border-radius: 8px;
+  box-shadow: shadows.$down-right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.destination-header {
+  width: 94%;
+  height: 22%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.destination-header-space-between {
+  justify-content: space-between;
+}
+.destination-header-center {
+  justify-content: center;
+}
+.destination-listen,
+.destination-power {
+  width: 15%;
+  aspect-ratio: 1;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.destination-listen-icon,
+.destination-power-icon {
+  width: 70%;
+  height: 70%;
+}
+.destination-listen-label,
+.destination-power-label {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+.destination-body {
+  width: 100%;
+  height: 56%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.destination-source-icon {
+  width: 50%;
+  height: 50%;
+}
+.destination-footer {
+  width: 100%;
+  height: 22%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* PROJECTOR *****************************************************************************************/
+.projector-screen-controls {
+  height: 100%;
+  aspect-ratio: 1.8;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "label label"
+    "up down";
+}
+.projector-blank-controls-label,
+.projector-screen-controls-label {
+  width: 100%;
+  height: 100%;
+  grid-area: label;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.projector-screen-controls-up {
+  grid-area: up;
+}
+.projector-screen-controls-down {
+  grid-area: down;
+}
+.projector-screen-controls-button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projector-screen-control-icon {
+  width: 75%;
+  height: 75%;
+}
+.projector-blank-controls {
+  height: 100%;
+  aspect-ratio: 1.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projector-blank-button {
+  width: 40%;
+  aspect-ratio: 1;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projector-blank-controls-label {
+  height: 20%;
+  align-items: flex-start;
+}
+.projector-blank-icon {
+  width: 80%;
+  height: 80%;
+}
+.projector-black-ban {
+  width: 8%;
+  height: 8%;
+  z-index: 100;
+  position: absolute;
+}
